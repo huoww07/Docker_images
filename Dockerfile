@@ -1,8 +1,5 @@
 FROM continuumio/miniconda
-LABEL Author="Wenwen" Description="Docker image containing biopython and samtools"
-
-
-RUN apt-get --allow-releaseinfo-change update && apt install -y procps g++ && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
+LABEL Author="huoww07" Description="Docker image containing biopython and samtools"
 
 COPY samtools.yml /
 
