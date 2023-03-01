@@ -1,0 +1,13 @@
+name: samtools
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - samtools=1.15.1
+  - biopython=1.81
+  - pip:
+    - pandas==1.4.1
+    - numpy==1.22.2
+    - argparse==1.4.0
+
